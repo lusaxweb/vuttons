@@ -24,8 +24,8 @@ export default {
     load () {
       const s = document.createElement('script')
       s.id = '_carbonads_js'
-      // s.src = `//cdn.carbonads.com/carbon.js?serve=CK7DC27J&placement=lusaxwebgithubio`
-      s.src = `//cdn.carbonads.com/carbon.js?serve=CK7DC27J&placement=localhost`
+      s.src = `//cdn.carbonads.com/carbon.js?serve=CK7DC27J&placement=lusaxwebgithubio`
+      // s.src = `//cdn.carbonads.com/carbon.js?serve=CK7DC27J&placement=localhost`
       this.$el.appendChild(s)
     }
   }
