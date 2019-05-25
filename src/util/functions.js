@@ -3,7 +3,6 @@ const setVar = (propertyName, value, el) => {
   if (!el) {
     document.documentElement.style.setProperty(`--vut-${propertyName}`, value)
   } else {
-    console.log(`--vut-${propertyName}`, value)
     el.style.setProperty(`--vut-${propertyName}`, value)
   }
 }

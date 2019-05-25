@@ -70,7 +70,6 @@ export default {
 
   mounted () {
     setColor('component', this.color, this.$refs.button)
-    console.log(this.color)
   },
 
   methods:{
