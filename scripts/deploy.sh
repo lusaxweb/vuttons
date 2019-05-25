@@ -3,12 +3,6 @@
 # abort on errors
 set -e
 
-git add .
-
-git commit -m "deploy"
-
-git push
-
 # build
 npm run docs:build
 
