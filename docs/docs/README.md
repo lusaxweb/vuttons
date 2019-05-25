@@ -8,6 +8,30 @@ docs: true
 
 <card>
 
+  ## Install
+
+  ```
+  npm install vuttons
+  ```
+
+</card>
+
+<card>
+
+  ## Use
+
+  ```
+  import Vue from 'vue'
+  import Vuttons from 'vuttons'
+
+  import 'vuttons/dist/vuttons.css'
+  Vue.use(Vuttons)
+  ```
+
+</card>
+
+<card>
+
   ## Colors
 
   By default Vuttons has the colors (**primary**, **success**, **danger**, **warning**, **dark**) and can be used in any button in the color property, you can also put a custom color as value for example `#f0f` o `rgb(200,200,100)`
