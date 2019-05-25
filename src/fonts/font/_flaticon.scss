@@ -1,0 +1,80 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/05/2019 18:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-behance-logo:before { content: "\f100"; }
+.flaticon-dribbble-logo:before { content: "\f101"; }
+.flaticon-github-logo:before { content: "\f102"; }
+.flaticon-code:before { content: "\f103"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f104"; }
+.flaticon-profile:before { content: "\f105"; }
+.flaticon-close:before { content: "\f106"; }
+.flaticon-check-symbol:before { content: "\f107"; }
+.flaticon-delete:before { content: "\f108"; }
+.flaticon-arrow:before { content: "\f109"; }
+.flaticon-arrow-1:before { content: "\f10a"; }
+.flaticon-chevron:before { content: "\f10b"; }
+.flaticon-down:before { content: "\f10c"; }
+.flaticon-warning:before { content: "\f10d"; }
+.flaticon-magnifying-glass:before { content: "\f10e"; }
+.flaticon-minus-line:before { content: "\f10f"; }
+.flaticon-add-song:before { content: "\f110"; }
+.flaticon-upload:before { content: "\f111"; }
+.flaticon-download:before { content: "\f112"; }
+.flaticon-edit:before { content: "\f113"; }
+    
+    $font-Flaticon-behance-logo: "\f100";
+    $font-Flaticon-dribbble-logo: "\f101";
+    $font-Flaticon-github-logo: "\f102";
+    $font-Flaticon-code: "\f103";
+    $font-Flaticon-twitter-logo-silhouette: "\f104";
+    $font-Flaticon-profile: "\f105";
+    $font-Flaticon-close: "\f106";
+    $font-Flaticon-check-symbol: "\f107";
+    $font-Flaticon-delete: "\f108";
+    $font-Flaticon-arrow: "\f109";
+    $font-Flaticon-arrow-1: "\f10a";
+    $font-Flaticon-chevron: "\f10b";
+    $font-Flaticon-down: "\f10c";
+    $font-Flaticon-warning: "\f10d";
+    $font-Flaticon-magnifying-glass: "\f10e";
+    $font-Flaticon-minus-line: "\f10f";
+    $font-Flaticon-add-song: "\f110";
+    $font-Flaticon-upload: "\f111";
+    $font-Flaticon-download: "\f112";
+    $font-Flaticon-edit: "\f113";

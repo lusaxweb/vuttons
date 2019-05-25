@@ -1,0 +1,49 @@
+
+@import './colors'
+@import './mixins'
+@import './vars'
+@import './buttons/**'
+@import './loading'
+@import './submit'
+
+.vut
+  outline: none
+  list-style: none
+  text-decoration: none
+  padding: $vut-padding-h $vut-padding-w
+  margin: $vut-margin
+  display: block
+  box-sizing: border-box
+  cursor: $vut-cursor
+  font-size: $vut-font-size
+  position relative
+  transition: $vut-transition
+  border-radius: $vut-border-radius
+
+  /*
+  *  Change Size button
+  */
+
+  &.vutton--extraLarge
+    font-size: 1.3rem
+    padding: $vut-padding-h * 1.5 $vut-padding-w * 1.5
+  &.vutton--large
+    font-size: 1.1rem
+    padding: $vut-padding-h * 1.2 $vut-padding-w * 1.2
+  &.vutton--small
+    font-size: .7rem
+    padding: ($vut-padding-h / 1.4) ($vut-padding-w / 1.4)
+  &.vutton--mini
+    font-size: .5rem
+    font-weight: bold
+    padding: ($vut-padding-h / 2.2) ($vut-padding-w / 2.2)
+
+  span
+    position relative
+    z-index 200
+    display: block
+
+  &:disabled
+    opacity .4
+    pointer-events: none
+    user-select none

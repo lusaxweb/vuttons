@@ -1,0 +1,55 @@
+.vut
+  &.vutton--6
+    --vut-component: vut-var('primary')
+    background: vut-color('component', .8)
+    color $vut-text-color
+    overflow hidden
+    border 0px
+    padding: $vut-padding-h + 2px $vut-padding-w + 2px !important
+    box-shadow: 0px 4px 0px 0px vut-color('component', 1)
+    &:hover:not(.vutton__loading):not(.vutton__active):not(.vutton__submit)
+      opacity .8
+    &:disabled
+      box-shadow: 0px 0px 0px 0px vut-color('component', 1)
+    &:active
+      transform: translate(0,5px)
+      box-shadow: 0px 0px 0px 0px vut-color('component', 1)
+      opacity .8
+    &.vutton__active
+      background vut-color('component',.2)
+      box-shadow: 0px 0px 0px 0px vut-color('component', 1)
+      color vut-color('component',1)
+    &.vutton__loading
+      pointer-events: none
+      user-select none
+      box-shadow: 0px 0px 0px 0px vut-color('component', 1)
+      .vut-loading
+        opacity 1
+        visibility: visible
+        background: rgba(255,255,255,.8)
+        .load
+          border 2px solid vut-color('component', 1)
+          border-left 2px solid transparent
+          border-top 2px solid transparent
+          border-right 2px solid transparent
+        .load2
+          border 2px solid vut-color('component', 1)
+          border-left 2px solid transparent
+          border-top 2px solid transparent
+          border-right 2px solid transparent
+    &.vutton__submit
+      pointer-events: none
+      user-select none
+      box-shadow: 0px 0px 0px 0px vut-color('component', 1)
+      .vut-submit
+        opacity 1
+        visibility: visible
+
+    &.vutton--extraLarge
+      padding: ($vut-padding-h * 1.5 ) + 2px ( $vut-padding-w * 1.5 ) + 2px
+    &.vutton--large
+      padding: ($vut-padding-h * 1.2 ) + 2px ( $vut-padding-w * 1.2 ) + 2px
+    &.vutton--small
+      padding: ( $vut-padding-h / 1.4 ) + 2px ( $vut-padding-w / 1.4) + 2px
+    &.vutton--mini
+      padding: ($vut-padding-h / 2.2 ) + 2px  ( $vut-padding-w / 2.2 ) + 2px

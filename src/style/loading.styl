@@ -1,0 +1,51 @@
+.vut-loading
+  top 0px
+  left 0px
+  width: 100%
+  height 100%
+  position absolute
+  background transparent
+  pointer-events none
+  z-index 300
+  opacity 0
+  visibility: hidden
+  display: block
+  background: vut-color('component',.5)
+  .con-load
+    width 22px
+    height 22px
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+    position absolute
+  .load
+    width 22px
+    height 22px
+    position absolute
+    border-radius 50%
+    border 2px solid $vut-text-color
+    border-left 2px solid transparent
+    border-top 2px solid transparent
+    border-right 2px solid transparent
+    box-sizing border-box
+    animation rotatex 1s linear infinite
+    opacity .5
+    display: block
+  .load2
+    width 22px
+    height 22px
+    position absolute
+    border-radius 50%
+    border 2px solid $vut-text-color
+    border-left 2px solid transparent
+    border-top 2px solid transparent
+    border-right 2px solid transparent
+    box-sizing border-box
+    animation rotatex 1s ease-out infinite
+    display: block
+
+@keyframes rotatex
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(360deg)

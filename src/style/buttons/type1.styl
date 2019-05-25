@@ -1,0 +1,28 @@
+.vut
+  &.vutton--1
+    --vut-component: vut-var('primary')
+    background: transparent
+    border 2px solid vut-color('component')
+    color vut-color('component', 1)
+    &:hover:not(.vutton__loading):not(.vutton__active):not(.vutton__submit)
+      background vut-color('component',1)
+      color $vut-text-color
+    &:active
+      opacity .8
+    &.vutton__active
+      color $vut-text-color
+      background vut-color('component')
+    &.vutton__loading
+      pointer-events: none
+      user-select none
+      .vut-loading
+        opacity 1
+        visibility: visible
+    &.vutton__submit
+      pointer-events: none
+      user-select none
+      .vut-submit
+        opacity 1
+        visibility: visible
+
+

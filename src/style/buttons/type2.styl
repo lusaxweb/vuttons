@@ -1,0 +1,37 @@
+.vut
+  &.vutton--2
+    --vut-component: vut-var('primary')
+    background: transparent
+    color vut-color('component', 1)
+    overflow hidden
+    border 0px
+    padding: $vut-padding-h + 2px $vut-padding-w + 2px
+    &:hover:not(.vutton__loading):not(.vutton__active):not(.vutton__submit)
+      background vut-color('component',1)
+      color $vut-text-color
+    &:active
+      opacity .8
+    &.vutton__active
+      color $vut-text-color
+      background vut-color('component')
+    &.vutton__loading
+      pointer-events: none
+      user-select none
+      .vut-loading
+        opacity 1
+        visibility: visible
+    &.vutton__submit
+      pointer-events: none
+      user-select none
+      .vut-submit
+        opacity 1
+        visibility: visible
+
+    &.vutton--extraLarge
+      padding: ($vut-padding-h * 1.5 ) + 2px ( $vut-padding-w * 1.5 ) + 2px
+    &.vutton--large
+      padding: ($vut-padding-h * 1.2 ) + 2px ( $vut-padding-w * 1.2 ) + 2px
+    &.vutton--small
+      padding: ( $vut-padding-h / 1.4 ) + 2px ( $vut-padding-w / 1.4) + 2px
+    &.vutton--mini
+      padding: ($vut-padding-h / 2.2 ) + 2px  ( $vut-padding-w / 2.2 ) + 2px

@@ -1,0 +1,70 @@
+ .vut
+  &.vutton--7
+    --vut-component: vut-var('primary')
+    background: transparent
+    color vut-color('component', 1)
+    overflow hidden
+    border 0px
+    padding: $vut-padding-h + 2px $vut-padding-w + 2px !important
+    border-radius: 0px !important
+    &:after
+      content ''
+      position absolute
+      bottom 0px
+      left 50%
+      width: 0%
+      height 3px
+      background: vut-color('component', 1)
+      transform: translate(-50%)
+      transition $vut-transition
+    &:hover:not(.vutton__loading):not(.vutton__active):not(.vutton__submit)
+      &:after
+        width: 100%
+    &:disabled
+      &:after
+        width: 0px
+    &:active
+      opacity .8
+      &:after
+        width: 90% !important
+    &.vutton__active
+      background vut-color('component',.1)
+      color vut-color('component',1)
+      &:after
+        width: 100%
+    &.vutton__loading
+      pointer-events: none
+      user-select none
+      &:after
+        width: 100%
+      .vut-loading
+        opacity 1
+        visibility: visible
+        background: rgba(255,255,255,.8)
+        .load
+          border 2px solid vut-color('component', 1)
+          border-left 2px solid transparent
+          border-top 2px solid transparent
+          border-right 2px solid transparent
+        .load2
+          border 2px solid vut-color('component', 1)
+          border-left 2px solid transparent
+          border-top 2px solid transparent
+          border-right 2px solid transparent
+    &.vutton__submit
+      pointer-events: none
+      user-select none
+      &:after
+        width: 100%
+      .vut-submit
+        opacity 1
+        visibility: visible
+
+    &.vutton--extraLarge
+      padding: ($vut-padding-h * 1.5 ) + 2px ( $vut-padding-w * 1.5 ) + 2px
+    &.vutton--large
+      padding: ($vut-padding-h * 1.2 ) + 2px ( $vut-padding-w * 1.2 ) + 2px
+    &.vutton--small
+      padding: ( $vut-padding-h / 1.4 ) + 2px ( $vut-padding-w / 1.4) + 2px
+    &.vutton--mini
+      padding: ($vut-padding-h / 2.2 ) + 2px  ( $vut-padding-w / 2.2 ) + 2px
