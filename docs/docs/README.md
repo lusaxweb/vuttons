@@ -10,8 +10,14 @@ docs: true
 
   ## Install
 
-  ```
+  ```sh
+  # npm
   npm install vuttons
+  ```
+
+  ```sh
+  # yarn
+  yarn add vuttons
   ```
 
 </card>
@@ -20,7 +26,7 @@ docs: true
 
   ## Use
 
-  ```
+  ```js
   import Vue from 'vue'
   import Vuttons from 'vuttons'
 

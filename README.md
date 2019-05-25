@@ -13,13 +13,19 @@ If you are an individual user and have enjoyed the productivity of using Vuttons
 
 ## Install
 
-```
+```bash
+# npm
 npm install vuttons
+```
+
+```
+# yarn
+yarn add vuttons
 ```
 
 ## Use
 
-```
+```javascript
 import Vue from 'vue'
 import Vuttons from 'vuttons'
 

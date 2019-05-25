@@ -4,11 +4,11 @@
       <slot></slot>
     </div>
 
-    <div class="example">
+    <div v-if="$slots.example" class="example">
       <slot name="example" />
     </div>
 
-    <div class="slotcode">
+    <div v-if="$slots.code" class="slotcode">
       <codex>
         <slot name="code" />
       </codex>
