@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Vuttons',
 	description: 'Buttons Components for Vuejs',
-  // base: '/vuttons/',
+  base: '/vuttons/',
   head: [
     ['link', { rel: 'icon', href: '/favicon-vuttons2.jpg' }]
   ],
