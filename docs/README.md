@@ -270,6 +270,44 @@ sidebar: auto
 
 <card>
 
+  ## Type 8
+
+<div slot="example">
+
+  <button-8 />
+
+</div>
+
+<div slot="code">
+
+  ```html
+  <template>
+    <div class="demo">
+      <Vutton type="8">
+        Default
+      </Vutton>
+      <Vutton type="8" active >
+        Active
+      </Vutton>
+      <Vutton type="8" loading >
+        Loading
+      </Vutton>
+      <Vutton type="8" submit >
+        Submit
+      </Vutton>
+      <Vutton type="8" disabled >
+        Disabled
+      </Vutton>
+    </div>
+  </template>
+  ```
+
+</div>
+
+</card>
+
+<card>
+
   ## Vuttons Coming soon
 
   We want to create many types of buttons and features in the next updates, the idea is to have a lot of buttons and many possibilities to choose and edit for each project
